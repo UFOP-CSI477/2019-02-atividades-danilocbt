@@ -1,0 +1,118 @@
+<html>
+	<head>
+    <meta charset="utf-8" />
+		<title>ROLIMÃ CONTROLLER</title>
+
+		<!-- Bootstrap início -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Bootstrap fim -->
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+		<!-- inclusão do arquivo .js criado -->
+		<script src="./js/processa.js"></script>
+
+	</head>
+
+  <body>
+
+		<!-- barra de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-5">
+      <div class="container">
+
+				<a class="navbar-brand" href="index.html">
+           <img src="./imagens/logo.png" width="100" height="70">
+					 CORRIDAS DE ROLIMÃ
+					 - SISTEMA DE CONTROLE DE CORRIDAS -
+        </a>
+      </div>
+
+    </nav>
+
+		<!-- formulario de coleta de dados -->
+		<form name="dados">
+			<div class="container">
+
+				<!-- titulo -->
+				<br><br>
+				<h5 class="light">Informe os dados da corrida: </h5><hr>
+
+	      <div class="row mb-2">
+
+					<div class="col-md-6">
+						<label for="nome">Competidor: </label>
+	          <input type="text" class="form-control" placeholder="Informe o nome do competidor: " name="nome" id="nome" required autofocus />
+	        </div>
+
+					<div class="col-md-3">
+						<label for="largada">Tempo de largada: </label>
+	          <input type="number" class="form-control" placeholder="Informe a posição de largada: " name="largada" id="largada" required />
+	        </div>
+
+					<div class="col-md-3">
+						<label for="tempo">Tempo(s)</label>
+						<input type="number" name="tempo" id="tempo" class="form-control" placeholder="Informe o tempo (s)" required/>
+					</div>
+
+	      </div>
+
+				<br>
+
+	      <div class="row">
+
+					<div class="col-md-6">
+						<button type="reset" class="btn btn-danger btn-lg btn-block">Limpar campos</button>
+					</div>
+
+					<div class="col-md-6">
+						<button type="button" class="btn btn-primary btn-lg btn-block" onclick="cadastrar()">Cadastrar competidor</button>
+					</div>
+
+	      </div>
+
+				<br>
+
+				<!--  -->
+				<div class="row">
+
+					<div class="col-md-6">
+						<button type="button" class="btn btn-dark btn-lg btn-block" onclick="limparTabela()">Limpar dados da tebala</button>
+					</div>
+
+					<div class="col-md-6">
+						<button type="button" class="btn btn-success btn-lg btn-block" onclick="ordenar()">Ordenar e conferir resultados</button>
+					</div>
+
+	      </div>
+
+				<br><br>
+				<h5 class="light">RESULTADOS - ROLIMÃ CONTROLLER</h5><hr>
+
+
+				<div name="resultado" class="row">
+					<div class="col-md-12" id="tabela">
+	          <table class="table table-striped">
+	            <thead class="thead-dark">
+	              <tr id="cabecalho">
+
+	              	<td>Largada</td>
+	                <td>Nome</td>
+	                <td>Tempo</td>
+	                <td>Ganhador</td>
+	              </tr>
+	            </thead>
+	            <tbody id="corpo" style="color: black"></tbody>
+	          </table>
+	        </div>
+				</div>
+
+			</div>
+		</form>
+
+		<!-- rodapé -->
+  </body>
+</html>
