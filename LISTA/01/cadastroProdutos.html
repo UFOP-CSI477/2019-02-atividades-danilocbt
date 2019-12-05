@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SISTEMA DE CADASTROS</title>
+  </head>
+  <body>
+
+    <div>
+      <div>
+        <form class="" action="index.html" method="post">
+          <label for="codigo">Código do produto: </label>
+          <input type="number" name="codigo" value="" required autofocus>
+          <br>
+
+          <label for="nome">Nome do produto: </label>
+          <input type="text" name="nome" value="" required>
+          <br>
+
+          <label for="peso">Peso do produto: </label>
+          <input type="text" name="peso" value="" required>
+          <br>
+
+          <label for="unidadeMedida">unidade de medida: </label>
+          <select name="unidadeMedida">
+            <option value="volvo">Kg</option>
+            <option value="saab">G</option>
+            <option value="fiat">Ton</option>
+          </select>
+          <br>
+
+          <label for="valor">Valor: </label>
+          <input type="text" name="valor" value="" required>
+          <br>
+
+          <label for="estoque">Estoque inicial: </label>
+          <input type="text" name="estoque" value="" required>
+          <br>
+
+          <label for="mercado">Tipo de mercado: </label>
+          <select name="mercado">
+            <option value="Interno">Interno</option>
+            <option value="Externo">Externo</option>
+          </select>
+          <br>
+
+          <a href="index.html">
+            <input type="button" name="voltar" value="Voltar">
+          </a>
+
+          <a href="index.html">
+            <input type="button" name="cadastrar" value="Cadastrar">
+          </a>
+
+        </form>
+
+        <div class="">
+          <label for="fornecedor">Fornecedor: </label>
+          <select name="fornecedor">
+            <option value="f1">Fornecedor 1</option>
+            <option value="f2">Fornecedor 2</option>
+            <option value="f3">Fornecedor 3</option>
+            <option value="f4">Fornecedor 4</option>
+            <option value="f5">Fornecedor 5</option>
+          </select>
+
+          <table border="1">
+            <tr>
+              <th>Código</th>
+              <th>Nome</th>
+              <th>Peso</th>
+              <th>Unidade</th>
+              <th>Valor</th>
+              <th>Estoque</th>
+              <th>Fornecedor</th>
+
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Sabão</td>
+              <td>1</td>
+              <td>kg</td>
+              <td>10,00</td>
+              <td>500</td>
+              <td>Fornecedor 1</td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>Arroz</td>
+              <td>4</td>
+              <td>kg</td>
+              <td>15,00</td>
+              <td>400</td>
+              <td>Fornecedor 3</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

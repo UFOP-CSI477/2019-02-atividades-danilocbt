@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SISTEMA DE CADASTROS</title>
+  </head>
+  <body>
+
+    <div>
+      <div>
+        <form class="" action="index.html" method="post">
+          <label for="codigo">Código: </label>
+          <input type="number" name="codigo" value="" required>
+          <br>
+
+          <label for="nome">Nome: </label>
+          <input type="text" name="nome" value="" required autofocus>
+          <br>
+
+          <label for="email">Email: </label>
+          <input type="email" name="email" value="" required>
+          <br>
+
+          <label for="cpf">cpf: </label>
+          <input type="text" name="cpf" value="" required>
+          <br>
+
+          <label for="tipo">Tipo: </label>
+          <select name="unidadeMedida">
+            <option value="pessoaFisica">Pessoa Física</option>
+            <option value="pessoaJuridica">Pessoa Jurídica</option>
+          </select>
+          <br>
+
+          <label for="rua">Rua: </label>
+          <input type="text" name="rua" value="" required>
+          <br>
+
+          <label for="rua">Número: </label>
+          <input type="number" name="numero" value="" required>
+          <br>
+
+          <label for="complemento">Complemento: </label>
+          <input type="text" name="complemento" value="">
+          <br>
+
+          <label for="bairro">Bairro: </label>
+          <input type="text" name="bairro" value="" required>
+          <br>
+
+          <label for="cidade">Cidade: </label>
+          <input type="text" name="cidade" value="" required>
+          <br>
+
+          <label for="estado">Estado: </label>
+          <input type="text" name="estado" value="" required>
+          <br>
+
+          <a href="index.html">
+            <input type="button" name="voltar" value="Voltar">
+          </a>
+
+          <a href="index.html">
+            <input type="button" name="cadastrar" value="Cadastrar">
+          </a>
+
+
+
+        </form>
+
+
+
+        <div>
+          <table border="1">
+            <tr>
+              <th>Código</th>
+              <th>Nome</th>
+              <th>Email</th>
+              <th>CPF</th>
+              <th>Tipo</th>
+              <th>Rua</th>
+              <th>Número</th>
+              <th>Complemento</th>
+              <th>Bairro</th>
+              <th>Cidade</th>
+              <th>Estado</th>
+
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Danilo Martins Caldeira</td>
+              <td>danilomartinscaldeira@gmail.com</td>
+              <td>126240726.59</td>
+              <td>Pessoa Física</td>
+              <td>Avenida Castelo Branco</td>
+              <td>235</td>
+              <td>201</td>
+              <td>República</td>
+              <td>João Monlevade</td>
+              <td>MG</td>
+            </tr>
+
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
